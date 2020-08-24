@@ -8,6 +8,20 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <img src="poop.png" />
+    <img id="target" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.esquire.com%2Flifestyle%2Fa31399201%2Fanimal-crossing-new-horizon-game-details%2F&psig=AOvVaw2zXac48SM8HUG5tWYOANef&ust=1598377092031000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPisk_GwtOsCFQAAAAAdAAAAABAD"/>
+
+    
+    <script>
+        const POOP_SRC = "./img/";
+        const POOP_NAME = "poop";
+        const POOP_COUNT = 7;
+        const POOP_EXTENSION = ".jpg";
+
+        const POOP_LOCATION = document.getElementById("target");
+        
+        POOP_LOCATION.src = POOP_SRC + POOP_NAME + Math.floor((Math.random() * POOP_COUNT)) + POOP_EXTENSION;
+
+    </script>
+
 </body>
 </html>
